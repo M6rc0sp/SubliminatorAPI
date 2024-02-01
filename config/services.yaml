@@ -6,6 +6,10 @@
 parameters:
 
 services:
+    App\Serializer\OrderNormalizer:
+        tags:
+            - { name: 'serializer.normalizer', priority: 100 }
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
